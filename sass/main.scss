@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./base/common";
 @import "./base/visually-hidden";
 @import "./components/logo";
@@ -10,7 +11,7 @@
 @import "./components/modal-form-main";
 @import "./components/modal-form-footer";
 @import "./components/checkbox";
-@import "./components/sicial-links";
+@import "./components/social-links";
 @import "./components/backdrop";
 @import "./layouts/header";
 @import "./layouts/navigation";

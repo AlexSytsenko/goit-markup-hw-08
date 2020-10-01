@@ -1,68 +1,109 @@
 .address-nav {
-  margin-left: auto;
-  display: flex;
-  align-content: center;
-
-  &__link {
-    display: inline-flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-style: normal;
-    color: $text-color-gray;
-    @include font(14px, 1.14, 500);
-    letter-spacing: 0.02em;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-    &:hover,
-    &:focus {
-      color: $accent-link-color;
-    }
-
-    &:hover .address-nav__icon,
-    &:focus .address-nav__icon {
-      fill: $accent-link-color;
+  display: none;
+  @include for-size(tablet-only) {
+    & {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      margin-left: auto;
     }
   }
-  &__icon {
-    margin-right: 10px;
-    fill: $text-color-gray;
+  @include for-size(desktop) {
+    & {
+      display: flex;
+      flex-wrap: nowrap;
+      align-content: center;
+      margin-left: auto;
+    }
+  }
+}
 
-    transition: fill $time $time-function;
+.address-nav__link {
+  font-style: normal;
+  color: $text-color-gray;
+  @include font(12px, 1.17, 500);
+  letter-spacing: 0.02em;
+
+  @include for-size(tablet-only) {
+    & {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  @include for-size(desktop) {
+    & {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 1.14;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-link-color;
+  }
+
+  &:hover .address-nav__icon,
+  &:focus .address-nav__icon {
+    fill: $accent-link-color;
+  }
+}
+.address-nav__icon {
+  margin-right: 10px;
+  fill: $text-color-gray;
+  transition: fill $time $time-function;
+
+  @include for-size(tablet-only) {
+    & {
+      margin-right: 8px;
+    }
   }
 }
 
 /*Адреса в Футере*/
 
-.footer-contacts-container {
-  width: calc((100% - 30px * 3) / 4);
-}
-
 .location-address {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-style: normal;
-  line-height: 1.71;
+  @include font(14px, 1.71);
   color: #ffffff;
+
+  @include for-size(desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .address-footer {
   display: flex;
   flex-direction: column;
 
-  &__link {
-    font-style: normal;
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.71;
+  @include for-size (mobil+tablet) {
+    margin-bottom: 60px;
+  }
+}
 
-    &:hover,
-    &:focus {
-      color: $accent-link-color;
-    }
+.address-footer__link {
+  font-style: normal;
+  @include font(14px, 1.71);
+  color: rgba(255, 255, 255, 0.6);
+  
 
-    &--mail {
-      margin-bottom: 10px;
+  &:hover,
+  &:focus {
+    color: $accent-link-color;
+  }
+
+  &--mail {
+    margin-bottom: 8px;
+
+    @include for-size(desktop) {
+      margin-bottom: 9px;
     }
   }
 }

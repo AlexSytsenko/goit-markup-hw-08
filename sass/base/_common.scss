@@ -24,36 +24,52 @@ img {
 
 .body {
   font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.03em;
   color: $text-color-gray;
 }
 
 .container {
-  width: 1200px;
   @include marginauto();
   padding-right: 15px;
   padding-left: 15px;
-}
 
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
+  @include for-size(mobile) {
+    width: 480px;
+  }
+  @include for-size(tablet) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 
 .section {
-  max-width: 1600px;
-  @include marginauto();
+  /*@include marginauto();*/
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(desktop) {
+ /*  max-width: 1600px;
+  @include marginauto(); */
   padding-top: 94px;
   padding-bottom: 94px;
+  }
+
 }
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
   padding-top: 0;
-  @include font(36px, 1.17, 700);
+  margin-bottom: 30px;
+  @include font(28px, 1.18, 700);
   text-align: center;
+
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+    @include font(36px, 1.17, 700);
+  }
 }
 
 .join-title {
@@ -64,6 +80,32 @@ img {
   text-transform: uppercase;
   color: $primary-color;
 }
+
+@include for-size(tablet) {
+.flexbox {
+  display: flex;
+}
+}
+
+
+/*
+.section {
+  max-width: 1600px;
+  @include marginauto();
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
+.join-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  @include font(14px, 1.14, 700);
+  text-transform: uppercase;
+  color: $primary-color;
+}
+*/
 
 .link {
   transition: $time $time-function;

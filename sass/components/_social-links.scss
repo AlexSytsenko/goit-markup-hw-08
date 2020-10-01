@@ -21,24 +21,29 @@
     &:focus .social-links__icon {
       fill: $primary-color;
     }
-    /* Социальные иконки - темная тема в Футере*/
-    &--dark {
-      background-color: rgba(255, 255, 255, 0.1);
-    }
+    
+    
   }
+}
 
-  &__icon {
+.social-links__icon {
     width: 20px;
     height: 20px;
     fill: $icon-gray;
     transition: fill $time $time-function;
-
-    /* Социальные иконки - темная тема в Футере*/
-    &--dark {
-      fill: $primary-color;
-    }
-  }
-  &--dark {
-    justify-content: start;
-  }
 }
+
+/* Социальные иконки - темная тема в Футере*/
+.social-links__link--dark {
+      background-color: rgba(255, 255, 255, 0.1);
+      justify-content: center;
+}
+
+.social-links--dark {
+      fill: $primary-color;
+}
+
+.social-links__icon--dark {
+  fill: $primary-color;
+}
+  

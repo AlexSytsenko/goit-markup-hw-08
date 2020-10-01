@@ -1,4 +1,21 @@
+.main-nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 .navigation {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    display: flex;
+  align-items: center;
+  }
+}
+
+/*.navigation {
   display: flex;
   align-items: center;
 }
@@ -7,3 +24,4 @@
   display: flex;
   align-items: center;
 }
+*/

@@ -1,4 +1,55 @@
 .logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: $accent-link-color;
+  font-family: Raleway, sans-serif;
+  @include font(24px, 1.17, 700);
+
+  @include for-size(tablet) {
+    & {
+      padding: 0;
+    }
+  }
+
+  @include for-size(desktop) {
+    & {
+      @include font(26px, 1.19, 700);
+    }
+  }
+}
+
+.logo--top {
+  margin-right: auto;
+
+  @include for-size(tablet) {
+    & {
+      margin-right: 88px;
+    }
+  }
+  @include for-size(desktop) {
+    & {
+      margin-right: 93px;
+    }
+  }
+}
+
+.logo__sign {
+  color: $black-color;
+}
+
+.logo__sign--white {
+  color: $primary-color;
+}
+
+/*Лого в футере*/
+.logo--bottom {
+  display: block;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+
+/* .logo {
   color: $accent-link-color;
   font-family: Raleway, sans-serif;
   @include font(26px, 1.19, 700);
@@ -10,15 +61,16 @@
       color: $primary-color;
     }
   }
-
-  /*Лого в хедере*/
+*/
+/*Лого в хедере
   &--top {
     margin-right: 93px;
   }
 
-  /*Лого в футере*/
+  /*Лого в футере
   &--bottom {
     display: block;
     margin-bottom: 20px;
   }
 }
+*/

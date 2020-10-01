@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
+  
   <body class="body">
-    <!--Хедер-->
+    
     <header class="header section">
       <div class="container main-nav">
+        <a href="./index.html" lang="en" class="logo logo--top">Web<span class="logo__sign">Studio</span></a>
         <nav class="navigation">
-          <a href="./index.html" lang="en" class="logo logo--top">Web<span class="logo__sign">Studio</span></a>
           <ul class="site-nav">
             <li class="site-nav__item"><a href="./index.html" class="link site-nav__link site-nav__link--current">Студия</a></li>
             <li class="site-nav__item"><a href="./portpholio.html" class="link site-nav__link">Портфолио</a></li>
@@ -21,7 +22,7 @@
           </ul>
         </nav>
         <address class="address-nav">
-          <a href="mailto:info@devstudio.com" lang="en" class="link link address-nav__link">
+          <a href="mailto:info@devstudio.com" lang="en" class="link address-nav__link">
             <svg class="address-nav__icon" width="16" height="12">
               <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
             </svg>
@@ -36,15 +37,16 @@
         </address>
       </div>
     </header>
-    <main>
-      <!--Герой-->
+  
+     <main>
+      
       <section class="hero section">
         <div class="hero-container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
-      <!--Наши особенности-->
+    
       <section class="section">
         <div class="container">
           <h2 class="section-title visually-hidden">Наши преимущества</h2>
@@ -68,7 +70,7 @@
           </ul>
         </div>
       </section>
-      <!--Что мы делаем-->
+  
       <section class="section activity">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
@@ -88,7 +90,6 @@
           </ul>
         </div>
       </section>
-      <!--Наша команда-->
       <section class="section staff">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
@@ -236,7 +237,8 @@
           </ul>
         </div>
       </section>
-      <!--Постоянные клиенты-->
+      
+      
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
@@ -286,10 +288,11 @@
           </ul>
         </div>
       </section>
+      
     </main>
-    <!--Футер-->
-    <footer id="contacts" class="footer">
-      <div class="footer-wraper container flexbox">
+  
+    <footer id="contacts" class="footer section">
+      <div class="footer-wraper container">
         <div class="footer-contacts-container">
           <a href="./index.html" lang="en" class="logo logo--bottom">Web<span class="logo__sign--white">Studio</span></a>
           <address class="address-footer">
@@ -347,7 +350,7 @@
         </div>
       </div>
     </footer>
-    <!--Backdrop-->
+    <!--
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-close flexbox" aria-label="Закрыть" data-modal-close>
@@ -355,7 +358,6 @@
             <use href="./images/svg/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <!--Form-->
 
         <form class="form-modal">
           <b class="form-modal__title">Оставьте свои данные, мы вам перезвоним</b>
@@ -406,6 +408,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>

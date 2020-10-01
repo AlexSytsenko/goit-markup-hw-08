@@ -1,0 +1,395 @@
+:root {
+  --text-color-gray: #757575;
+  --text-color-black: #212121;
+  --accent-link-color: #2196f3;
+  --white: #ffffff;
+  --primary-background: #e5e5e5;
+  --secondary-background: #f5f4fa;
+}
+
+/* #188ce8 цвет фона кнопки Героя*/
+/* #E5E5E5 первичный цвет фона*/
+/* #F5F4FA вторичный цвет фона*/
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--text-color-gray);
+  background-color: var(--primary-background);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  color: var(--text-color-black);
+}
+
+header {
+  background-color: var(--white);
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Main nav*/
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/*Logo*/
+.logo {
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-header {
+  color: #000000;
+}
+
+/* Site nav*/
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-link-color);
+}
+.site-nav .link.current {
+  color: var(--accent-link-color);
+}
+
+/*Address-nav*/
+
+.address-nav {
+  margin-left: auto;
+}
+
+.address-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.address-nav .link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-nav .link {
+  font-style: normal;
+  color: var(--text-color-gray);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.address-nav .link:hover,
+.address-nav .link:focus {
+  color: var(--accent-link-color);
+}
+
+/*Hero*/
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background: #2f303a;
+}
+
+.hero-container {
+  max-width: 695px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.hero-button {
+  margin-top: 0;
+  min-width: 200px;
+  height: 50px;
+  border: transparent;
+  border-radius: 4px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: #188ce8;
+}
+
+/*Features*/
+
+.features-item {
+  width: calc((100% - 30px * 3) / 4);
+}
+
+.features-item:not(:nth-child(4n + 1)) {
+  margin-left: 30px;
+}
+
+.features-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 10px;
+}
+
+.features-titel {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*our job*/
+
+.job {
+  text-align: center;
+  padding-bottom: 94px;
+}
+
+.job-titel {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.job-list {
+  font-size: 0;
+}
+
+.jpb-item {
+  width: calc((100% - 30px * 2) / 3);
+}
+
+.job-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.job-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 10px;
+}
+
+/*our team*/
+
+/*.our-team {
+  background-color: var(--secondary-background);*/
+
+.team-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team-list {
+  text-align: center;
+}
+
+.team-item {
+  width: calc((100% - 30px * 3) / 4);
+}
+
+.team-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.team-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 10px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+.team-worker-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-worker-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/*Footer*/
+
+footer {
+  background: #2f303a;
+}
+
+.footer-contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: calc((100% - 30px * 3) / 4);
+}
+
+.logo-down {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo-footer {
+  color: var(--white);
+}
+.adress-footer-streat {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-style: normal;
+  line-height: 1.71;
+  color: #ffffff;
+}
+
+.address-footer .link {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+}
+
+.address-footer .link:hover,
+.address-footer .link:focus {
+  color: var(--accent-link-color);
+}
+
+.mail {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/*Portfolio*/
+
+.projects-selection-list {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.projects-selection-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.projects-selection-item .button {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--text-color-black);
+  background: var(--secondary-background);
+  border-radius: 4px;
+  border: transparent;
+}
+
+.projects-selection-list .button:hover,
+.projects-selection-list .button:focus {
+  color: var(--white);
+  background-color: var(--accent-link-color);
+}
+
+.projects-item {
+  width: calc((100% - 30px * 2) / 3);
+}
+
+.projects-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects-text-container {
+  padding: 20px 24px;
+}
+
+.projects-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projecrs-text {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-color-gray);
+}
