@@ -2,6 +2,10 @@
   padding-top: 0;
   text-align: center;
 
+  @include for-size(mobil + tablet) {
+    display: none;
+  }
+
   &__list {
     font-size: 0;
   }
