@@ -1121,12 +1121,6 @@ img {
 
 @media (min-width: 768px) {
   .staff-list {
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
-    -webkit-box-align: normal;
-        -ms-flex-align: normal;
-            align-items: normal;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1147,7 +1141,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .staff-list__item {
     width: calc((100% - 30px * 1) / 2);
   }
