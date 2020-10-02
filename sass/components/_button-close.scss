@@ -1,6 +1,10 @@
 /*Кнопка закрытия модалки*/
 
 .button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
   width: 30px;
   height: 30px;
   margin-left: auto;

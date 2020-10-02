@@ -16,7 +16,13 @@
   &:focus {
     background-color: #188ce8;
   }
+  &--modal-button {
+    @include flex();
+    @include marginauto();
+  }
 }
+
+
 
 .subscribe-button {
   @include flex();

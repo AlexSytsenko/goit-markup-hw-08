@@ -1,13 +1,47 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: $time $time-function;
+  
+  width: 450px;
+  padding: 40px;
+  justify-content: flex-end;
+  background-color: $primary-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @include for-size(desktop) {
+    width: 528px;
+    
+  }
+}
+
 .form-modal {
-  width: 448px;
-  @include marginauto();
+  
+
+  @include for-size(desktop) {
+    width: 448px;
+  }
 
   &__title {
     display: block;
     margin-bottom: 12px;
-    @include font(20px, 1.15, 700);
+    @include font(20px, 1.5, 700);
     text-align: center;
     color: $text-color-black;
+
+    @include for-size(desktop) {
+      @include font(20px, 1.15, 700);
+    }
   }
 
   &__field {
