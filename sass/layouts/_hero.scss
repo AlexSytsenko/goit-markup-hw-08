@@ -1,23 +1,37 @@
 .hero {
-  height: 600px;
-  padding: 200px 0px;
+  height: 400px;
+  @include marginauto();
+  padding: 118px 0px;
   background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg), #c4c4c4;
   background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
 
+  @include for-size(desktop) {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0px;
+  }
+
   &-container {
-    max-width: 695px;
+    max-width: 360px;
     @include marginauto();
+
+    @include for-size(desktop) {
+      max-width: 695px;
+    }
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include font(26px, 1.62, 900);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $primary-color;
+
+    @include for-size(desktop) {
+      @include font(44px, 1.36, 900);
+    }
   }
 }

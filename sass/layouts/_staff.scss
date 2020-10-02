@@ -22,7 +22,7 @@
       margin-bottom: 60px;
     }
   }
-  @include for-size(tablet) {
+  @include for-size(tablet-only) {
     width: calc((100% - 30px * 1) / 2);
     &:not(:nth-child(2n)) {
       margin-right: 30px;
