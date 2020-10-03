@@ -21,16 +21,17 @@
 .logo--top {
   margin-right: auto;
 
-  @include for-size(tablet) {
-    & {
+ @include for-size(tablet) {
+     
       margin-right: 88px;
     }
-  }
+
+  
   @include for-size(desktop) {
-    & {
+     
       margin-right: 93px;
     }
-  }
+  
 }
 
 .logo__sign {
