@@ -90,25 +90,6 @@ img {
   }
 }
 
-/*
-.section {
-  max-width: 1600px;
-  @include marginauto();
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-
-.join-title {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
-  @include font(14px, 1.14, 700);
-  text-transform: uppercase;
-  color: $primary-color;
-}
-*/
-
 .link {
   transition: $time $time-function;
 }

@@ -1,0 +1,30 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  transition: $time $time-function;
+
+  &.is-open .icon-mobile-close {
+    display: block;
+  }
+
+  &.is-open .icon-mobile-menu {
+    display: none;
+  }
+  &:hover .icon-mobile-menu,
+  &:focus .icon-mobile-menu,
+  &:hover .icon-mobile-close,
+  &:focus .icon-mobile-close {
+    fill: $accent-link-color;
+  }
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+
+.icon-mobile-close {
+  display: none;
+}

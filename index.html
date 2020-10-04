@@ -34,7 +34,7 @@
               </svg>
               info@devstudio.com
             </a>
-            <a href="tel:+380961111111" class="link link address-nav__link">
+            <a href="tel:+380961111111" class="link address-nav__link">
               <svg class="address-nav__icon" width="10" height="16">
                 <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
               </svg>
@@ -82,15 +82,26 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="activity__list flexbox">
             <li class="activity__item">
-              <img src="./images/img1.jpg" alt="Человек, который работает за ноутбуком" width="370" />
+              <picture>
+                <source srcset="./images/expertise/001img.jpg 1x, ./images/expertise/001img@2x.jpg 2x, ./images/expertise/001img@3x.jpg 3x" media="(min-width: 1200px)" />
+                <img src="./images/expertise/img1.jpg" alt="Веб приложения" width="370" />
+              </picture>
               <p class="activity__text">Десктопные приложения</p>
             </li>
             <li class="activity__item">
-              <img src="./images/img2.jpg" alt="Макеты для мобыльного приложения" width="370" />
+              <picture>
+                <source
+                  srcset="./images/expertise/002img.jpg 1x, ./images/expertise/002img@2x.jpg 2x, ./images/expertise/002img@3x.jpg 3x" media="(min-width: 1200px)" />
+                <img src="./images/expertise/img2.jpg" alt="Мобильные приложения" width="370" />
+              </picture>
               <p class="activity__text">Мобильные приложения</p>
             </li>
             <li class="activity__item">
-              <img src="./images/img3.jpg" alt="Человек подбирает на планшете цвет для дизайна" width="370" />
+              <picture>
+                <source
+                  srcset="./images/expertise/003img.jpg 1x, ./images/expertise/003img@2x.jpg 2x, ./images/expertise/003img@3x.jpg 3x" media="(min-width: 1200px)" />
+                <img src="./images/expertise/img3.jpg" alt="Дизайн приложений" width="370" />
+              </picture>
               <p class="activity__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -102,7 +113,12 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="staff-list flexbox">
             <li class="staff-list__item">
-              <img class="staff-list__img" src="./images/teamcard1.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source srcset="./images/team/desk/igor-1x.jpg 1x, ./images/team/desk/igor-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/igor-1x.jpg 1x, ./images/team/tablet/igor-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/igor-1x.jpg 1x, ./images/team/mobile/igor-2x.jpg 2x" media="(max-width: 767px)" />
+                <img class="staff-list__img" src="./images/team/igor.jpg" alt="Игорь Демьяненко" width="450" />
+              </picture>
               <h3 class="staff-list__title">Игорь Демьяненко</h3>
               <p class="staff-list__text" lang="en">Product Designer</p>
               <ul class="social-links">
@@ -137,7 +153,12 @@
               </ul>
             </li>
             <li class="staff-list__item">
-              <img class="staff-list__img" src="./images/teamcard2.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source srcset="./images/team/desk/olga-1x.jpg 1x, ./images/team/desk/olga-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/olga-1x.jpg 1x, ./images/team/tablet/olga-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/olga-1x.jpg 1x, ./images/team/mobile/olga-2x.jpg 2x" media="(max-width: 767px)" />
+                <img class="staff-list__img" src="./images/team/olga.jpg" alt="Ольга Репина" width="450" />
+              </picture>
               <h3 class="staff-list__title">Ольга Репина</h3>
               <p class="staff-list__text" lang="en">Frontend Developer</p>
               <ul class="social-links">
@@ -172,7 +193,12 @@
               </ul>
             </li>
             <li class="staff-list__item">
-              <img class="staff-list__img" src="./images/teamcard3.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source srcset="./images/team/desk/kolya-1x.jpg 1x, ./images/team/desk/kolya-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/kolya-1x.jpg 1x, ./images/team/tablet/kolya-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/kolya-1x.jpg 1x, ./images/team/mobile/kolya-2x.jpg 2x" media="(max-width: 767px)" />
+                <img class="staff-list__img" src="./images/team/kolya.jpg" alt="Николай Тарасов" width="450" />
+              </picture>
               <h3 class="staff-list__title">Николай Тарасов</h3>
               <p class="staff-list__text" lang="en">Marketing</p>
               <ul class="social-links">
@@ -207,7 +233,12 @@
               </ul>
             </li>
             <li class="staff-list__item">
-              <img class="staff-list__img" src="./images/teamcard4.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source srcset="./images/team/desk/misha-1x.jpg 1x, ./images/team/desk/misha-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/misha-1x.jpg 1x, ./images/team/tablet/misha-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/misha-1x.jpg 1x, ./images/team/mobile/misha-2x.jpg 2x" media="(max-width: 767px)" />
+                <img class="staff-list__img" src="./images/team/misha.jpg" alt="Михаил Ермаков" width="450" />
+              </picture>
               <h3 class="staff-list__title">Михаил Ермаков</h3>
               <p class="staff-list__text" lang="en">UI Designer</p>
               <ul class="social-links">

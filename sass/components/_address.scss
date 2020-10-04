@@ -5,12 +5,13 @@
 
   @include for-size(tablet) {
     justify-content: center;
+    align-items: start;
   }
 
   @include for-size(desktop) {
     // display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
+    flex-direction: row;
+    align-items: center;
     // margin-left: auto;
   }
 }
@@ -29,7 +30,6 @@
   }
   @include for-size(tablet) {
     @include font(12px, 1.17, 500);
-  
   }
 
   @include for-size(tablet-only) {
@@ -39,16 +39,15 @@
   }
 
   @include for-size(desktop) {
-    
-      &:not(:last-child) {
-        margin-right: 30px;
-        margin-bottom: 0;
-      
-      display: inline-flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      font-size: 14px;
-      line-height: 1.14;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.14;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
     }
   }
 
